@@ -1,6 +1,332 @@
 apiVersion: v1
 entries:
+  crabcache:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-01T07:48:17.788481267Z"
+    description: A Helm chart for Kubernetes
+    digest: 1c74cad1e44a9392cb428bacf68ae3944a3a10088a422b4e5a97e3ecee2fae52
+    name: crabcache
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/crabcache-0.1.7/crabcache-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-01T07:50:31.175847567Z"
+    description: A Helm chart for Kubernetes
+    digest: 15afd6b2f92d9654fa9096d65fdadbd417bc91b360dbca6447b682ef240acf08
+    name: crabcache
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/crabcache-0.1.6/crabcache-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-01T07:42:06.972431106Z"
+    description: A Helm chart for Kubernetes
+    digest: f14cef1691f375cf0ed40911f6abe77c63c3afb5f4e93c4e4b1311ba395aa8d5
+    name: crabcache
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/crabcache-0.1.5/crabcache-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-31T15:55:47.528880433Z"
+    description: A Helm chart for Kubernetes
+    digest: 588ea1b79d7fcdf7a9eec747f1ccc05d52ba052a50a8de137587bd78663f33dd
+    name: crabcache
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/crabcache-0.1.4/crabcache-0.1.4.tgz
+    version: 0.1.4
+  crabserver:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-31T15:55:47.66389734Z"
+    description: A Helm chart for Kubernetes
+    digest: d1bcaa3154bee142d68388e584910b193dfcb0f390023525074e284305795bbb
+    name: crabserver
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/crabserver-0.1.1/crabserver-0.1.1.tgz
+    version: 0.1.1
+  das-mongo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-31T15:55:47.80578004Z"
+    description: A Helm chart for Kubernetes
+    digest: ccf38356d4fd6dc08d03d81ab2187587dcb68a584710278ae35086c48583b10f
+    name: das-mongo
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/das-mongo-0.1.1/das-mongo-0.1.1.tgz
+    version: 0.1.1
+  das-mongo-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-31T15:55:47.940942557Z"
+    description: A Helm chart for Kubernetes
+    digest: b6bb85964ceaf0abf0a24afdb2393bd1dc6e4dab135d91e42059acb4c4586a7d
+    name: das-mongo-exporter
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/das-mongo-exporter-0.1.1/das-mongo-exporter-0.1.1.tgz
+    version: 0.1.1
+  das-server:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-31T15:55:48.066541086Z"
+    description: A Helm chart for Kubernetes
+    digest: 23f9476fa8eeb496e355723831d63648d748894d7dd004783b87aeecb52e08f4
+    name: das-server
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/das-server-0.1.1/das-server-0.1.1.tgz
+    version: 0.1.1
+  dbs-global-r:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-31T16:22:22.665110197Z"
+    description: A Helm chart for Kubernetes
+    digest: 122f6021cde24bbebb4db832430334ce05c599c6594729e028d9440769dd9326
+    name: dbs-global-r
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/dbs-global-r-0.1.1/dbs-global-r-0.1.1.tgz
+    version: 0.1.1
+  dbs-global-w:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-31T16:22:22.796038063Z"
+    description: A Helm chart for Kubernetes
+    digest: 132820afd04ff49827d27f148815705a9e10f2c663ff63ee2f4a781beda1bc4b
+    name: dbs-global-w
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/dbs-global-w-0.1.1/dbs-global-w-0.1.1.tgz
+    version: 0.1.1
+  dbs-migrate:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-31T16:22:22.936515592Z"
+    description: A Helm chart for Kubernetes
+    digest: 5d5e1ad3b10150604497ba9983815e707a43b00f51f3133017723d7b0fa476e5
+    name: dbs-migrate
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/dbs-migrate-0.1.1/dbs-migrate-0.1.1.tgz
+    version: 0.1.1
+  dbs-phys03-r:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-31T16:22:23.063327131Z"
+    description: A Helm chart for Kubernetes
+    digest: a88d285067e959fabc2f52f671e403b0fcb19b73d3b6ed703de47ceb59e5dd61
+    name: dbs-phys03-r
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/dbs-phys03-r-0.1.1/dbs-phys03-r-0.1.1.tgz
+    version: 0.1.1
+  dbs-phys03-w:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-31T16:22:23.232310448Z"
+    description: A Helm chart for Kubernetes
+    digest: 61579c2f2525857aaebf702671db867e1d194552fc6f2699409b5cd3cfac8a59
+    name: dbs-phys03-w
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/dbs-phys03-w-0.1.1/dbs-phys03-w-0.1.1.tgz
+    version: 0.1.1
+  dbs2go:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-31T16:22:23.350946033Z"
+    description: A Helm chart for Kubernetes
+    digest: 2e2076041b15178fe430d76e97f7660705f41569195814f328f0d82584f7dd55
+    name: dbs2go
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/dbs2go-0.1.1/dbs2go-0.1.1.tgz
+    version: 0.1.1
+  dbsmigration:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-31T16:22:23.507396468Z"
+    description: A Helm chart for Kubernetes
+    digest: 89f7bdf6b6c8063402b100823dafbd6c33109fc3c110b12dac264068d29e735a
+    name: dbsmigration
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/dbsmigration-0.1.1/dbsmigration-0.1.1.tgz
+    version: 0.1.1
+  exitcodes:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:57.551336587Z"
+    description: A Helm chart for Exitcodes
+    digest: bb57101af8ff15d13c512a5bcf9aaafa4cc347dd7ea0a1f46699cc8beba357e8
+    name: exitcodes
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/exitcodes-0.1.0/exitcodes-0.1.0.tgz
+    version: 0.1.0
+  httpgo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:57.696841431Z"
+    description: A Helm chart for HTTPGO service
+    digest: 0fb471d09192fc5604e474be9d4012d6faba705da302140e2c036e64db65bc77
+    name: httpgo
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/httpgo-0.1.0/httpgo-0.1.0.tgz
+    version: 0.1.0
+  ms-output-mongo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:57.84089235Z"
+    description: A Helm chart for Kubernetes
+    digest: 13a44fb0d102172fa0ec9a8799c97a2533a3b25ac2f8db572fb9c815a9e2975c
+    name: ms-output-mongo
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/ms-output-mongo-0.1.0/ms-output-mongo-0.1.0.tgz
+    version: 0.1.0
+  reqmgr2:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:57.992853607Z"
+    description: A Helm chart for Kubernetes
+    digest: 5e8c7c2e4f8991fdb40f9634711ae1788f169ce6169866f9cb45a42430d28dde
+    name: reqmgr2
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2-0.1.0/reqmgr2-0.1.0.tgz
+    version: 0.1.0
+  reqmgr2-tasks:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:58.131763436Z"
+    description: A Helm chart for Kubernetes
+    digest: 489a6f38fecd1bc64ab5bf07c84628c93da8f8583f5ea00ef0da9ee5e01abbee
+    name: reqmgr2-tasks
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2-tasks-0.1.0/reqmgr2-tasks-0.1.0.tgz
+    version: 0.1.0
+  reqmgr2ms-monitor:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:58.28474431Z"
+    description: A Helm chart for Kubernetes
+    digest: 92d8f4bb3af3c62375e39a09bf1a1b733f79ea20d75132beca614b984a95e820
+    name: reqmgr2ms-monitor
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-monitor-0.1.0/reqmgr2ms-monitor-0.1.0.tgz
+    version: 0.1.0
+  reqmgr2ms-output:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:58.436159558Z"
+    description: A Helm chart for Kubernetes
+    digest: 78a72a44582f5077a3601b0f5d66ac2e05a21490439b5c38a8f7af67f6ddc2ff
+    name: reqmgr2ms-output
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-output-0.1.0/reqmgr2ms-output-0.1.0.tgz
+    version: 0.1.0
+  reqmgr2ms-rulecleaner:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:58.585360567Z"
+    description: A Helm chart for Kubernetes
+    digest: 07dc57215b0f42fdb1d0aff516c7e86f1c4d4e77ab8d35d1ecccd6a808365f02
+    name: reqmgr2ms-rulecleaner
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-rulecleaner-0.1.0/reqmgr2ms-rulecleaner-0.1.0.tgz
+    version: 0.1.0
+  reqmgr2ms-transferor:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:58.720681733Z"
+    description: A Helm chart for Kubernetes
+    digest: 40ed02e1978a40e55da7c4537c7b673df0b153a68adaf14c5acae29805426742
+    name: reqmgr2ms-transferor
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-transferor-0.1.0/reqmgr2ms-transferor-0.1.0.tgz
+    version: 0.1.0
+  reqmgr2ms-unmerged-t1:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:58.866426081Z"
+    description: A Helm chart for Kubernetes
+    digest: 1110447c4fa50367deedc6f7eb4cb63925c1bde426a951ca5a59e6637cc21230
+    name: reqmgr2ms-unmerged-t1
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-unmerged-t1-0.1.0/reqmgr2ms-unmerged-t1-0.1.0.tgz
+    version: 0.1.0
+  reqmgr2ms-unmerged-t2t3:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:59.024146839Z"
+    description: A Helm chart for Kubernetes
+    digest: 10b90cb79c27d9cc44bba11bb002bc2829f7dfd87c20f755be0098d407fece43
+    name: reqmgr2ms-unmerged-t2t3
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-unmerged-t2t3-0.1.0/reqmgr2ms-unmerged-t2t3-0.1.0.tgz
+    version: 0.1.0
+  reqmgr2ms-unmerged-t2t3us:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:59.175119278Z"
+    description: A Helm chart for Kubernetes
+    digest: 48b8d09b170d7c45d9acdfb117d1bf42aeae390a7ab48bb8139c78772fee331d
+    name: reqmgr2ms-unmerged-t2t3us
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-unmerged-t2t3us-0.1.0/reqmgr2ms-unmerged-t2t3us-0.1.0.tgz
+    version: 0.1.0
+  reqmon:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:59.319048095Z"
+    description: A Helm chart for Kubernetes
+    digest: 0502e6e2dd275037300c2c75d5181cc1c7c52badb8cfc4db5240da169301738d
+    name: reqmon
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmon-0.1.0/reqmon-0.1.0.tgz
+    version: 0.1.0
+  reqmon-tasks:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:19:59.466703077Z"
+    description: A Helm chart for Kubernetes
+    digest: 4c95cb927b71589fe14f257a977b8470194a3e8525fe9ffff94e145f00bb2160
+    name: reqmon-tasks
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmon-tasks-0.1.0/reqmon-tasks-0.1.0.tgz
+    version: 0.1.0
   rucio-consistency:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2021-08-31T21:19:37.117584291Z"
+    description: A Helm chart for Kubernetes
+    digest: e2fbb6408a4827f271fcafe3a8c409aacbd23c744b8253ed0adfc140582ad746
+    name: rucio-consistency
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/rucio-consistency-0.3.1/rucio-consistency-0.3.1.tgz
+    version: 0.3.1
   - apiVersion: v2
     appVersion: 0.1.0
     created: "2021-08-27T17:25:38.918582016Z"
@@ -24,6 +350,16 @@ entries:
   rucio-cron-jobs:
   - apiVersion: v2
     appVersion: latest
+    created: "2021-09-03T07:19:59.774915666Z"
+    description: A Helm chart for Kubernetes
+    digest: b7d751b2f0c2fa3f77377794eab8ab3607f579515e75a9df2be2ebbc818ead29
+    name: rucio-cron-jobs
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/rucio-cron-jobs-0.3.0/rucio-cron-jobs-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: latest
     created: "2021-08-27T17:25:39.065291921Z"
     description: A Helm chart for Kubernetes
     digest: f769157f73df2e143e33b46491bee5b866d35edbb7107fd652be23ba94a0cd6c
@@ -35,6 +371,16 @@ entries:
   rucio-loadtest:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2021-09-03T07:19:59.913196384Z"
+    description: A Helm chart for the loadtest application for Rucio
+    digest: 2691d1c9a8ce499e37e50d9d804122133d5e3d584e9a5828b9e462464aa3b87a
+    name: rucio-loadtest
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/rucio-loadtest-0.3.0/rucio-loadtest-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2021-08-27T17:25:39.216581785Z"
     description: A Helm chart for the loadtest application for Rucio
     digest: a2bf6e6632b6e9ba2fabba24b631b712f4c02405110850696446261640ef0e86
@@ -44,6 +390,24 @@ entries:
     - https://github.com/dmwm/CMSKubernetes/releases/download/rucio-loadtest-0.2.0/rucio-loadtest-0.2.0.tgz
     version: 0.2.0
   rucio-statsd-exporter:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-09-03T07:20:00.070815539Z"
+    description: A Helm chart to deploy statsd-exporter for CMS Rucio
+    digest: 6b28d83bb62d93d31f0b07f3ba5ec7e8f9933bcbec987f161a43700029a68487
+    home: https://github.com/dmwm/CMSKubernetes
+    keywords:
+    - data-management
+    - science
+    maintainers:
+    - email: ewv@fnal.gov
+      name: Eric Vaandering
+    name: rucio-statsd-exporter
+    sources:
+    - https://github.com/dmwm/CMSKubernetes
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/rucio-statsd-exporter-1.1.0/rucio-statsd-exporter-1.1.0.tgz
+    version: 1.1.0
   - apiVersion: v1
     appVersion: "1.0"
     created: "2021-08-27T17:25:39.330297861Z"
@@ -65,6 +429,16 @@ entries:
   rucio-traces:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2021-08-31T18:21:34.024713728Z"
+    description: A Helm chart for Kubernetes
+    digest: e90dd973a300c54a15d6231dffb55a9976e8b2585cb66e3fbbb8463a46966fdf
+    name: rucio-traces
+    type: application
+    urls:
+    - https://github.com/dmwm/CMSKubernetes/releases/download/rucio-traces-0.3.1/rucio-traces-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2021-08-27T17:25:39.459042633Z"
     description: A Helm chart for Kubernetes
     digest: c83d6f84dab68da1ed85b8c8ae790853d84eae2482782f95f42b95bc3eea7753
@@ -73,4 +447,59 @@ entries:
     urls:
     - https://github.com/dmwm/CMSKubernetes/releases/download/rucio-traces-0.2.0/rucio-traces-0.2.0.tgz
     version: 0.2.0
-generated: "2021-08-27T17:25:39.459052733Z"
+  t0reqmon:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:20:00.383187101Z"
+    description: A Helm chart for Kubernetes
+    digest: 96bb39941981376d80655f731b57d2c82bac623e8d1fb0a3454f6383f852a3a5
+    name: t0reqmon
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/t0reqmon-0.1.0/t0reqmon-0.1.0.tgz
+    version: 0.1.0
+  t0reqmon-tasks:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:20:00.562343034Z"
+    description: A Helm chart for Kubernetes
+    digest: 481509a5e86f5ea4062df40ccc99be1175e4d0ccb088f168accab79211bc6ba3
+    name: t0reqmon-tasks
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/t0reqmon-tasks-0.1.0/t0reqmon-tasks-0.1.0.tgz
+    version: 0.1.0
+  t0wmadatasvc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:20:00.755048503Z"
+    description: A Helm chart for Kubernetes
+    digest: b799cd316e55c95ee15242ee97f4175fc7426e5bdceb8abe5ed1612642176843
+    name: t0wmadatasvc
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/t0wmadatasvc-0.1.0/t0wmadatasvc-0.1.0.tgz
+    version: 0.1.0
+  wmarchive:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:20:00.919339996Z"
+    description: A Helm chart for Kubernetes
+    digest: 33d4c054faa4e14e9513d507dd12551e4ad45a7715e60c6811048f8a1672df9e
+    name: wmarchive
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/wmarchive-0.1.0/wmarchive-0.1.0.tgz
+    version: 0.1.0
+  workqueue:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-03T07:20:01.175269429Z"
+    description: A Helm chart for Kubernetes
+    digest: 6b2697d41180a0366d4b60babd1d4e1bb60fd0f035e4a5c15acd7c03b463d3cf
+    name: workqueue
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/workqueue-0.1.0/workqueue-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-09-03T07:20:01.17530733Z"
