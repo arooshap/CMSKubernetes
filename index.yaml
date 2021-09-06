@@ -64,14 +64,14 @@ entries:
   crabserver:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-09-06T06:01:18.829743813Z"
+    created: "2021-09-06T06:47:00.32958683Z"
     description: A Helm chart for Kubernetes
-    digest: ba558166e75d70358377c10e4441e6f6f96600878bbc2efbf597a1b56274b1a2
+    digest: 76bbe774fe1ae2c52f94e1162bf93cb5636003a03b8e9d26483f2531f4f292d2
     name: crabserver
     type: application
     urls:
-    - https://github.com/arooshap/CMSKubernetes/releases/download/crabserver-0.1.3/crabserver-0.1.3.tgz
-    version: 0.1.3
+    - https://github.com/arooshap/CMSKubernetes/releases/download/crabserver-0.1.4/crabserver-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
     created: "2021-09-03T10:10:54.096506508Z"
@@ -604,4 +604,4 @@ entries:
     urls:
     - https://github.com/dmwm/CMSKubernetes/releases/download/workqueue-0.1.1/workqueue-0.1.1.tgz
     version: 0.1.1
-generated: "2021-09-06T06:01:18.829828119Z"
+generated: "2021-09-06T06:47:00.329650233Z"
