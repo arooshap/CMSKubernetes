@@ -7,7 +7,7 @@ metadata:
   labels:
     run: {{.Values.db.instance0.serviceName}}
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
     - port: {{.Values.db.service.port}}
       targetPort: {{.Values.db.service.port}}
@@ -15,19 +15,6 @@ spec:
       protocol: TCP
   selector:
     defacementComponent: {{.Values.db.instance0.podName}}
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: mongodb-lb
-spec:
-  selector:
-    env: {{.Values.quickSetting.env}}
-  ports:
-    - protocol: TCP
-      port: 27017
-      targetPort: 27017
-  type: LoadBalancer
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -50,6 +37,8 @@ spec:
     spec:
       nodeSelector:
         type: pod-0
+      hostNetwork: true
+      dnsPolicy: ClusterFirstWithHostNet
       containers:
         - image: {{.Values.quickSetting.image.mongodb}}
           name: {{.Values.db.instance0.podName}}
@@ -114,7 +103,7 @@ metadata:
   labels:
     run: {{.Values.db.instance1.serviceName}}
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
     - port: {{.Values.db.service.port}}
       targetPort: {{.Values.db.service.port}}
@@ -144,6 +133,8 @@ spec:
     spec:
       nodeSelector:
         type: pod-1
+      hostNetwork: true
+      dnsPolicy: ClusterFirstWithHostNet
       containers:
         - image: {{.Values.quickSetting.image.mongodb}}
           name: {{.Values.db.instance1.podName}}
@@ -195,7 +186,7 @@ metadata:
   labels:
     run: {{.Values.db.instance2.serviceName}}
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
     - port: {{.Values.db.service.port}}
       targetPort: {{.Values.db.service.port}}
@@ -225,6 +216,8 @@ spec:
     spec:
       nodeSelector:
         type: pod-2
+      hostNetwork: true
+      dnsPolicy: ClusterFirstWithHostNet
       containers:
         - image: {{.Values.quickSetting.image.mongodb}}
           name: {{.Values.db.instance2.podName}}
