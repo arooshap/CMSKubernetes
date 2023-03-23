@@ -41,6 +41,7 @@ spec:
       dnsPolicy: ClusterFirstWithHostNet
       containers:
         - image: {{.Values.quickSetting.image.mongodb}}
+          imagePullPolicy: Always
           name: {{.Values.db.instance0.podName}}
           ports:
            - containerPort: 27017
@@ -141,6 +142,7 @@ spec:
       dnsPolicy: ClusterFirstWithHostNet
       containers:
         - image: {{.Values.quickSetting.image.mongodb}}
+          imagePullPolicy: Always
           name: {{.Values.db.instance1.podName}}
           ports:
            - containerPort: 27017 
@@ -228,6 +230,7 @@ spec:
       containers:
         - image: {{.Values.quickSetting.image.mongodb}}
           name: {{.Values.db.instance2.podName}}
+          imagePullPolicy: Always
           ports:
           - containerPort: 27017
             hostPort: 27017
