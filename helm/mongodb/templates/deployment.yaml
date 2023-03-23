@@ -1,20 +1,20 @@
----
-apiVersion: v1
-kind: Service
-metadata:
-  namespace: {{.Values.quickSetting.namespace}}
-  name: {{.Values.db.instance0.serviceName}}
-  labels:
-    run: {{.Values.db.instance0.serviceName}}
-spec:
-  type: ClusterIP
-  ports:
-    - port: {{.Values.db.service.port}}
-      targetPort: {{.Values.db.service.port}}
-      nodePort: {{.Values.db.instance0.nodePort}}
-      protocol: TCP
-  selector:
-    defacementComponent: {{.Values.db.instance0.podName}}
+#---
+#apiVersion: v1
+#kind: Service
+#metadata:
+#  namespace: {{.Values.quickSetting.namespace}}
+#  name: {{.Values.db.instance0.serviceName}}
+#  labels:
+#    run: {{.Values.db.instance0.serviceName}}
+#spec:
+#  type: ClusterIP
+#  ports:
+#    - port: {{.Values.db.service.port}}
+#      targetPort: {{.Values.db.service.port}}
+#      nodePort: {{.Values.db.instance0.nodePort}}
+#      protocol: TCP
+#  selector:
+#    defacementComponent: {{.Values.db.instance0.podName}}
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -42,6 +42,10 @@ spec:
       containers:
         - image: {{.Values.quickSetting.image.mongodb}}
           name: {{.Values.db.instance0.podName}}
+          ports:
+           - containerPort: 27017
+             hostPort: 27017
+             protocol: TCP
           resources:
             requests:
               ephemeral-storage: {{.Values.db.pod.resources.requests.ephemeralStorage}}
@@ -95,23 +99,23 @@ spec:
                 path: mongokeyfile
 
 ---
-apiVersion: v1
-kind: Service
-metadata:
-  namespace: {{.Values.quickSetting.namespace}}
-  name: {{.Values.db.instance1.serviceName}}
-  labels:
-    run: {{.Values.db.instance1.serviceName}}
-spec:
-  type: ClusterIP
-  ports:
-    - port: {{.Values.db.service.port}}
-      targetPort: {{.Values.db.service.port}}
-      nodePort: {{.Values.db.instance1.nodePort}}
-      protocol: TCP
-  selector:
-    defacementComponent: {{.Values.db.instance1.podName}}
----
+#apiVersion: v1
+#kind: Service
+#metadata:
+#  namespace: {{.Values.quickSetting.namespace}}
+#  name: {{.Values.db.instance1.serviceName}}
+#  labels:
+#    run: {{.Values.db.instance1.serviceName}}
+#spec:
+#  type: ClusterIP
+#  ports:
+#    - port: {{.Values.db.service.port}}
+#      targetPort: {{.Values.db.service.port}}
+#      nodePort: {{.Values.db.instance1.nodePort}}
+#      protocol: TCP
+#  selector:
+#    defacementComponent: {{.Values.db.instance1.podName}}
+#---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -138,6 +142,9 @@ spec:
       containers:
         - image: {{.Values.quickSetting.image.mongodb}}
           name: {{.Values.db.instance1.podName}}
+          ports:
+           - containerPort: 27017 
+             hostPort: 27017
           resources:
             requests:
               ephemeral-storage: {{.Values.db.pod.resources.requests.ephemeralStorage}}
@@ -177,23 +184,23 @@ spec:
             items:
               - key: keyfile
                 path: mongokeyfile
----
-apiVersion: v1
-kind: Service
-metadata:
-  namespace: {{.Values.quickSetting.namespace}}
-  name: {{.Values.db.instance2.serviceName}}
-  labels:
-    run: {{.Values.db.instance2.serviceName}}
-spec:
-  type: ClusterIP
-  ports:
-    - port: {{.Values.db.service.port}}
-      targetPort: {{.Values.db.service.port}}
-      nodePort: {{.Values.db.instance2.nodePort}}
-      protocol: TCP
-  selector:
-    defacementComponent: {{.Values.db.instance2.podName}}
+#---
+#apiVersion: v1
+#kind: Service
+#metadata:
+#  namespace: {{.Values.quickSetting.namespace}}
+#  name: {{.Values.db.instance2.serviceName}}
+#  labels:
+#    run: {{.Values.db.instance2.serviceName}}
+#spec:
+#  type: ClusterIP
+#  ports:
+#    - port: {{.Values.db.service.port}}
+#      targetPort: {{.Values.db.service.port}}
+#      nodePort: {{.Values.db.instance2.nodePort}}
+#      protocol: TCP
+#  selector:
+#    defacementComponent: {{.Values.db.instance2.podName}}
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -221,6 +228,9 @@ spec:
       containers:
         - image: {{.Values.quickSetting.image.mongodb}}
           name: {{.Values.db.instance2.podName}}
+          ports:
+          - containerPort: 27017
+            hostPort: 27017
           resources:
             requests:
               ephemeral-storage: {{.Values.db.pod.resources.requests.ephemeralStorage}}
