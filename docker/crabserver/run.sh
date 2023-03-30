@@ -1,15 +1,6 @@
 #!/bin/bash
 srv=`echo $USER | sed -e "s,_,,g"`
 
-# overwrite host PEM files in /data/srv area
-
-if [ -f /etc/robots/robotkey.pem ]; then
-    sudo cp /etc/robots/robotkey.pem /data/srv/current/auth/$srv/dmwm-service-key.pem
-    sudo cp /etc/robots/robotcert.pem /data/srv/current/auth/$srv/dmwm-service-cert.pem
-    sudo chown $USER.$USER /data/srv/current/auth/$srv/dmwm-service-key.pem
-    sudo chown $USER.$USER /data/srv/current/auth/$srv/dmwm-service-cert.pem
-fi
-
 
 
 # overwrite proxy if it is present in /etc/proxy

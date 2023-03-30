@@ -108,9 +108,6 @@ spec:
         - name: secrets
           mountPath: /etc/secrets
           readOnly: true
-        - name: robot-secrets
-          mountPath: /etc/robots
-          readOnly: true
         - name: hmac-secrets
           mountPath: /etc/hmac
           readOnly: true
@@ -131,9 +128,6 @@ spec:
       - name: secrets
         secret:
           secretName: crabserver-secrets
-      - name: robot-secrets
-        secret:
-          secretName: robot-secrets
       - name: hmac-secrets
         secret:
           secretName: hmac-secrets

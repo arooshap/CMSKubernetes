@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ARCH=slc7_amd64_gcc630
-VER=HG2212d
+VER=HG2211c-a7e4b3ae858d7a2fd20a4b47c7e2d305 
 REPO="comp"
 AREA=/data/cfg/admin
 PKGS="admin backend crabserver/preprod"
