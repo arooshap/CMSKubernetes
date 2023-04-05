@@ -12,14 +12,19 @@ certificates=$1
 
 robot_key=$certificates/robotkey.pem
 robot_crt=$certificates/robotcert.pem
+
+robot_key_crab=$certificates/robotkey-crab.pem
+robot_crt_crab=$certificates/robotcert-crab.pem
+
+robot_key_wmcore=$certificates/robotkey-wmcore.pem
+robot_crt_wmore=$certificates/robotcert-wmcore.pem
+
 client_id=$certificates/client_id
 client_secret=$certificates/client_secret
 
 proxy=/tmp/$USER/proxy
 token=/tmp/$USER/token
 
-voms-proxy-init -voms cms -rfc \
-        --key $robot_key --cert $robot_crt --out $proxy
     for ns in $namespaces; do
         echo "---"
         echo "Create certificates secrets in namespace: $ns"
