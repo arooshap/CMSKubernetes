@@ -26,15 +26,19 @@ proxy=/tmp/$USER/proxy
 token=/tmp/$USER/token
 
 #create proxies with VOMS extensions
-#for generic namesace
+
+#for generic namespace
 voms-proxy-init -voms cms -rfc \
         --key $robot_key --cert $robot_crt --out $proxy
-#for wmcore
+	
+#for dmwm
 voms-proxy-init -voms cms -rfc \
         --key $robot_key_wmcore --cert $robot_crt_wmcore --out $proxy_wmcore
+	
 #for crab
 voms-proxy-init -voms cms -rfc \
         --key $robot_key_crab --cert $robot_crt_crab --out $proxy_crab
+	
     for ns in $namespaces; do
         echo "---"
         echo "Create certificates secrets in namespace: $ns"
@@ -46,7 +50,7 @@ voms-proxy-init -voms cms -rfc \
                 kubectl apply --namespace=$ns -f -
         fi
 
-	if [ $ns == "crab" ]
+	if [ $ns=="crab" ]
         then
         #create robot secret
             kubectl create secret generic robot-secrets \
@@ -61,7 +65,7 @@ voms-proxy-init -voms cms -rfc \
             --from-file=$proxy_crab --dry-run=client -o yaml | \
             kubectl apply --namespace=$ns -f -
 
-        elif [$ns== "dmwm" ]
+        elif [$ns=="dmwm" ]
         then
         #create robot secret
             kubectl create secret generic robot-secrets \
