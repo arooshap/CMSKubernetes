@@ -25,6 +25,16 @@ client_secret=$certificates/client_secret
 proxy=/tmp/$USER/proxy
 token=/tmp/$USER/token
 
+#create proxies with VOMS extensions
+#for generic namesace
+voms-proxy-init -voms cms -rfc \
+        --key $robot_key --cert $robot_crt --out $proxy
+#for wmcore
+voms-proxy-init -voms cms -rfc \
+        --key $robot_key_wmcore --cert $robot_crt_wmcore --out $proxy_wmcore
+#for crab
+voms-proxy-init -voms cms -rfc \
+        --key $robot_key_crab --cert $robot_crt_crab --out $proxy_crab
     for ns in $namespaces; do
         echo "---"
         echo "Create certificates secrets in namespace: $ns"
@@ -35,8 +45,38 @@ token=/tmp/$USER/token
                 --from-file=$keys --dry-run=client -o yaml | \
                 kubectl apply --namespace=$ns -f -
         fi
-	
-        # create secrets with our robot certificates
+
+	if [ $ns == "crab" ]
+        then
+        #create robot secret
+            kubectl create secret generic robot-secrets \
+            --from-file=$robot_key_crab --from-file=$robot_crt_crab \
+            --dry-run=client -o yaml | \
+            kubectl apply --namespace=$ns -f -
+
+        # create proxy secret
+        if [ -f $proxy_crab ]
+        then
+            kubectl create secret generic proxy-secrets \
+            --from-file=$proxy_crab --dry-run=client -o yaml | \
+            kubectl apply --namespace=$ns -f -
+
+        elif [$ns== "dmwm" ]
+        then
+        #create robot secret
+            kubectl create secret generic robot-secrets \
+            --from-file=$robot_key_wmcore --from-file=$robot_crt_wmcore \
+            --dry-run=client -o yaml | \
+            kubectl apply --namespace=$ns -f -
+
+        # create proxy secret
+        if [ -f $proxy_wmcore ]; then
+            kubectl create secret generic proxy-secrets \
+                --from-file=$proxy_wmcore --dry-run=client -o yaml | \
+                kubectl apply --namespace=$ns -f -
+
+        else
+        # create robot secrets
         kubectl create secret generic robot-secrets \
             --from-file=$robot_key --from-file=$robot_crt \
             --dry-run=client -o yaml | \
@@ -47,6 +87,7 @@ token=/tmp/$USER/token
             kubectl create secret generic proxy-secrets \
                 --from-file=$proxy --dry-run=client -o yaml | \
                 kubectl apply --namespace=$ns -f -
+        fi
         fi
         # create client secret
         if [ -f $client_id ] && [ -f $client_secret ]; then
