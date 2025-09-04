@@ -155,6 +155,16 @@ entries:
     version: 0.1.4
   crabserver:
   - apiVersion: v2
+    appVersion: v3.240809
+    created: "2025-09-04T13:50:01.822792623Z"
+    description: A Helm chart for Kubernetes
+    digest: 8041c691d90eab2bb0d167aadc769ed3875e125effb17e4eade2461781ec9af8
+    name: crabserver
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/crabserver-0.2.1/crabserver-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
     appVersion: v3.220727
     created: "2022-08-16T08:34:24.663318176Z"
     description: A Helm chart for Kubernetes
@@ -184,6 +194,17 @@ entries:
     urls:
     - https://github.com/dmwm/CMSKubernetes/releases/download/crabserver-0.1.1/crabserver-0.1.1.tgz
     version: 0.1.1
+  crons:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-09-04T13:50:01.98842014Z"
+    description: A Helm chart for Kubernetes
+    digest: d376c7078e27e3fdf4056dc8d943c2978402450e788e1f143d4d3c4feaf7af26
+    name: crons
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/crons-0.1.0/crons-0.1.0.tgz
+    version: 0.1.0
   das-exporter:
   - apiVersion: v2
     appVersion: HG2011h-stable
@@ -622,6 +643,17 @@ entries:
     urls:
     - https://github.com/dmwm/CMSKubernetes/releases/download/k8snodemon-0.1.1/k8snodemon-0.1.1.tgz
     version: 0.1.1
+  mongodb:
+  - apiVersion: v2
+    appVersion: 1.0.12
+    created: "2025-09-04T13:50:02.141432628Z"
+    description: A Helm chart for launching a MongoDB ReplicaSet with 3 instances
+    digest: 4064bc280c1d24ac132c6c8014c720166fac332cd2459577c49c275cc8055729
+    name: mongodb
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/mongodb-1.0.12/mongodb-1.0.12.tgz
+    version: 1.0.12
   ms-output-mongo:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -1164,6 +1196,16 @@ entries:
   reqmgr2:
   - apiVersion: v2
     appVersion: HG2208d
+    created: "2025-09-04T13:50:02.366637312Z"
+    description: A Helm chart for Kubernetes
+    digest: 42292bb5f9dc312cba909cdcddebd9ca270f8c7438397277b6c85caa65c5cf86
+    name: reqmgr2
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2-0.1.6/reqmgr2-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: HG2208d
     created: "2022-09-14T12:46:09.098332036Z"
     description: A Helm chart for Kubernetes
     digest: 9b4d5f2eaf28dedeea89a5399f56be885979612480aef62f85d426f3d70ee12c
@@ -1236,6 +1278,16 @@ entries:
   reqmgr2ms-monitor:
   - apiVersion: v2
     appVersion: HG2208d
+    created: "2025-09-04T13:50:02.758749978Z"
+    description: A Helm chart for Kubernetes
+    digest: 9e36ca2620ae1b586c836ea0c9958e32c233be1671a685ef3cfb3bde84a6c6d5
+    name: reqmgr2ms-monitor
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-monitor-0.1.4/reqmgr2ms-monitor-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: HG2208d
     created: "2022-09-14T12:46:09.469341569Z"
     description: A Helm chart for Kubernetes
     digest: 4d00c6f28fa783b85dc213b23373cf275030fed61590923c0f1f85e567440ce5
@@ -1267,6 +1319,16 @@ entries:
   reqmgr2ms-output:
   - apiVersion: v2
     appVersion: HG2208d
+    created: "2025-09-04T13:50:02.960512638Z"
+    description: A Helm chart for Kubernetes
+    digest: 331823790148b87d5674f3fede50ac6734ffb5d9cea9220f1ee10af12cb86f72
+    name: reqmgr2ms-output
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-output-0.1.5/reqmgr2ms-output-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: HG2208d
     created: "2022-09-14T12:46:09.640331795Z"
     description: A Helm chart for Kubernetes
     digest: 968da0bdc40aa32884f0cbf7e93224239485d68130e6e7f3e6d0cba60db90fe3
@@ -1295,7 +1357,37 @@ entries:
     urls:
     - https://github.com/dmwm/CMSKubernetes/releases/download/reqmgr2ms-output-0.1.1/reqmgr2ms-output-0.1.1.tgz
     version: 0.1.1
+  reqmgr2ms-pileup:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2025-09-04T13:50:03.158306608Z"
+    description: A Helm chart for deploying the reqmgr2ms-pileup service
+    digest: 325468137099b51302a87070b84f48e39a01449b69eac039acf5893ba0f9aead
+    name: reqmgr2ms-pileup
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-pileup-0.1.1/reqmgr2ms-pileup-0.1.1.tgz
+    version: 0.1.1
+  reqmgr2ms-pileup-tasks:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-09-04T13:50:03.361315402Z"
+    description: A Helm chart for deploying the reqmgr2ms-pileup-tasks service
+    digest: 323edba32def4b4986b64b32686163ec084f3b6c8e9efd3c5bb8da27d16c15e7
+    name: reqmgr2ms-pileup-tasks
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-pileup-tasks-0.1.0/reqmgr2ms-pileup-tasks-0.1.0.tgz
+    version: 0.1.0
   reqmgr2ms-rulecleaner:
+  - apiVersion: v2
+    appVersion: HG2208d
+    created: "2025-09-04T13:50:03.56889721Z"
+    description: A Helm chart for Kubernetes
+    digest: 7608e787ceaf96cbedfc61ab400148614e64cdeea0a63f7cb7a4bb449e280455
+    name: reqmgr2ms-rulecleaner
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-rulecleaner-0.1.4/reqmgr2ms-rulecleaner-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: HG2208d
     created: "2022-09-14T12:46:09.813214994Z"
@@ -1329,6 +1421,16 @@ entries:
   reqmgr2ms-transferor:
   - apiVersion: v2
     appVersion: HG2208d
+    created: "2025-09-04T13:50:03.852318563Z"
+    description: A Helm chart for Kubernetes
+    digest: ae85538be383065517dda69fb639f8f15024df30d7a977ca341366a8e99adfc3
+    name: reqmgr2ms-transferor
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-transferor-0.1.4/reqmgr2ms-transferor-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: HG2208d
     created: "2022-09-14T12:46:09.958834087Z"
     description: A Helm chart for Kubernetes
     digest: a4102c733fff250e87bc71fea783f202b66051c756dc838927cb729c911106db
@@ -1358,6 +1460,16 @@ entries:
     - https://github.com/dmwm/CMSKubernetes/releases/download/reqmgr2ms-transferor-0.1.1/reqmgr2ms-transferor-0.1.1.tgz
     version: 0.1.1
   reqmgr2ms-unmerged-t1:
+  - apiVersion: v2
+    appVersion: HG2208d
+    created: "2025-09-04T13:50:04.007813693Z"
+    description: A Helm chart for Kubernetes
+    digest: b7b7d256ea47ac13703e9c44d22096702e790250f665348e302795702e28c2c0
+    name: reqmgr2ms-unmerged-t1
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-unmerged-t1-0.1.5/reqmgr2ms-unmerged-t1-0.1.5.tgz
+    version: 0.1.5
   - apiVersion: v2
     appVersion: HG2208d
     created: "2022-09-14T12:46:10.118917871Z"
@@ -1391,6 +1503,16 @@ entries:
   reqmgr2ms-unmerged-t2t3:
   - apiVersion: v2
     appVersion: HG2208d
+    created: "2025-09-04T13:50:04.182066771Z"
+    description: A Helm chart for Kubernetes
+    digest: 3d10f028b8de41cdd5f9298e7576ecd2f2d41da1f2051fd5ebaeecc014f46681
+    name: reqmgr2ms-unmerged-t2t3
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-unmerged-t2t3-0.1.4/reqmgr2ms-unmerged-t2t3-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: HG2208d
     created: "2022-09-14T12:46:10.299248063Z"
     description: A Helm chart for Kubernetes
     digest: 074c0e3ffc9f5327241059c02e1ccc9521b6c45a928613c386c21986683b4673
@@ -1420,6 +1542,16 @@ entries:
     - https://github.com/dmwm/CMSKubernetes/releases/download/reqmgr2ms-unmerged-t2t3-0.1.1/reqmgr2ms-unmerged-t2t3-0.1.1.tgz
     version: 0.1.1
   reqmgr2ms-unmerged-t2t3us:
+  - apiVersion: v2
+    appVersion: HG2208d
+    created: "2025-09-04T13:50:04.342742626Z"
+    description: A Helm chart for Kubernetes
+    digest: 453e0595441099b355cd61db54e7c651492595168a590839e59ebf83697c2ef3
+    name: reqmgr2ms-unmerged-t2t3us
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/reqmgr2ms-unmerged-t2t3us-0.1.4/reqmgr2ms-unmerged-t2t3us-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: HG2208d
     created: "2022-09-14T12:46:10.457366875Z"
@@ -1981,6 +2113,16 @@ entries:
   workqueue:
   - apiVersion: v2
     appVersion: HG2208d
+    created: "2025-09-04T13:50:05.288027059Z"
+    description: A Helm chart for Kubernetes
+    digest: c64f4b600e0911548e5a2661928c6e956eb918ef6d338ba236754b9db17803a8
+    name: workqueue
+    type: application
+    urls:
+    - https://github.com/arooshap/CMSKubernetes/releases/download/workqueue-0.1.4/workqueue-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: HG2208d
     created: "2022-09-14T12:46:11.417354781Z"
     description: A Helm chart for Kubernetes
     digest: d9105157b229106d06212db739b2e597cc7b7c87a5d370db285de8054de77971
@@ -2020,4 +2162,4 @@ entries:
     urls:
     - https://github.com/dmwm/CMSKubernetes/releases/download/x509-proxy-server-0.1.1/x509-proxy-server-0.1.1.tgz
     version: 0.1.1
-generated: "2022-09-14T12:46:11.417667677Z"
+generated: "2025-09-04T13:50:05.288344675Z"
